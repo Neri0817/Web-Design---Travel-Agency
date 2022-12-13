@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alexandria", sans-serif;
+}
+
+.bg-image {
+  background: linear-gradient(
+      0deg,
+      rgba(155, 0, 15, 0.368),
+      rgba(209, 209, 209, 0.244)
+    ),
+    url("/images/background.jpg") no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 20px;
+  box-shadow: -3px -150px 100px -36px rgba(0, 0, 0, 1) inset;
+}
+
+.logo {
+  width: 250px;
+}
+
+.nav-menu {
+  list-style: none;
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.nav-menu li {
+  padding: 15px 50px 15px 50px;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  border-bottom: 4px solid rgb(255, 0, 0);
+}
+
+.nav-menu li:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(155, 0, 15, 0.368);
+  padding: 15px 50px 11px 50px;
+  cursor: pointer;
+}
+
+.bg-image p {
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  left: 30px;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+.bg-image p:nth-child(1n) {
+  bottom: 180px;
+  font-size: 24px;
+}
+
+.bg-image p:nth-child(2n) {
+  bottom: 0px;
+  font-size: 60px;
+}
+.bg-image p span {
+  color: red;
+}
+
+main {
+  background: url("/images/main_img.jpg") no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  box-shadow: 0px 110px 100px 21px rgba(0, 0, 0, 0.97) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 80.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.823);
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.main-container form label {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 25px #000000, 0 0 3px #000000;
+}
+
+.main-container form input {
+  height: 40px;
+  margin-top: 10px;
+  border: 0px solid;
+  outline: none;
+}
+.main-container form input::placeholder {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.main-container form input:focus,
+.main-container form input:hover {
+  background-color: rgba(155, 0, 16, 0.419);
+  color: white;
+}
+
+#destinations {
+  width: 300px;
+}
+
+.main-btn {
+  border: 0px solid;
+  background-color: red;
+  padding: 11px 15px;
+  font-family: "Alexandria", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.main-btn:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 150px -30px rgba(0, 0, 0, 0.75) inset;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 90px 95px 0px 95px;
+}
+
+.booking-info {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.823);
+  font-family: "Alexandria", sans-serif;
+  width: 20%;
+  padding: 20px;
+  border-radius: 0;
+}
+
+.booking-info i {
+  font-size: 30px;
+}
+
+.booking-info h3 {
+  font-size: 22px;
+}
+
+.booking-info i,
+.booking-info h3 {
+  text-shadow: 1px 1px red;
+}
+
+.about {
+  height: 100vh;
+  background-color: black;
+  box-shadow: 0px -44px 61px 32px rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.about img {
+  width: 180%;
+  position: relative;
+  border-radius: 0 100% 0 100%;
+}
+
+.about-us {
+  color: white;
+  text-align: center;
+}
+
+.about-us h3 {
+  font-size: 32px;
+  text-shadow: 1px 2px red;
+}
+
+.about-us p {
+  padding: 0 50px;
+  line-height: 1.4;
+}
+
+.about-us button {
+  border: 2px solid red;
+  color: red;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.about-us button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(127, 127, 127, 0.174);
+  transition: all 0.4s;
+}
+
+.about-us button:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.about-us button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+
+.about-us button:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.packages {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.packages h1 {
+  font-size: 32px;
+  text-shadow: 1px 2px red;
+  margin: 0;
+}
+
+.gallery {
+  margin: 60px 0;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.gallery-container p {
+  background-color: rgba(0, 0, 0, 0.686);
+  padding: 10px 0;
+  margin: 0;
+  font-size: 18px;
+  text-shadow: 1px 2px red;
+}
+
+.gallery-container-img {
+  height: 300px;
+  width: 220px;
+  cursor: pointer;
+}
+
+.gallery-container-img div {
+  border: 2px solid red;
+  border-bottom: 0px solid;
+  border-top: 0px solid;
+  width: 200px;
+  height: 88%;
+  margin: 0 auto;
+}
+
+.tokyo-img {
+  background: url("/images/tokyo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.kyoto-img {
+  background: url("/images/kyoto.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.osaka-img {
+  background: url("/images/osaka.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.sapporo-img {
+  background: url("/images/sapporo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.packages-img {
+  margin: 0 auto;
+  width: 83%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.packages-img img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimony {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-quote {
+  text-align: center;
+  background: url("/images/jp.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  padding: 50px 200px;
+  box-shadow: 0px 0px 0px 1200px rgba(0, 0, 0, 0.65) inset;
+  color: #fff;
+}
+
+.testimony-quote h1 {
+  font-size: 32px;
+  text-shadow: 1px 2px red;
+}
+
+.testimony-quote h3 {
+  text-shadow: 1px 1px black;
+}
+
+.testimony-quote p {
+  text-align: center;
+  padding: 0 100px;
+  text-shadow: 1px 1px black;
+}
+
+.testimony-quote span {
+  font-weight: bold;
+  text-shadow: 1px 1px red;
+}
+
+.testimony-space {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+
+.testimony-pics {
+  display: flex;
+}
+
+.testimony-pics div {
+  width: 34.1vh;
+  height: 31vh;
+}
+
+.img1 {
+  background: url("/images/img1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.img2 {
+  background: url("/images/img2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.img3 {
+  background: url("/images/img3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.img4 {
+  background: url("/images/img4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.img5 {
+  background: url("/images/img5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.img6 {
+  background: url("/images/img6.jpg") no-repeat center;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background: url("/images/footer.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: 0px 0px 0px 1200px rgba(0, 0, 0, 0.65) inset;
+  color: white;
+  text-align: center;
+}
+
+.cp {
+  padding-top: 50px;
+  font-size: 12px;
+  text-shadow: 1px 1px black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  text-shadow: 1px 1px black;
+}
+
+.footer h1 {
+  text-shadow: 1px 1px black;
+}
+
+.footer i {
+  font-size: 24px;
+}
